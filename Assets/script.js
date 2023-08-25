@@ -53,6 +53,26 @@ $(document).ready(function () {
   });
 
   // TODO: Add code to display the current date in the header of the page.
-  let formattedDate = dayjs().format('dddd, MMMM, YYYY');
-  currentDateElement.textContent = formattedDate;
+  function ordinalSuffix(num) {
+    var j = num % 10,
+      k = num % 100;
+    if (j == 1 && k != 11) {
+      return num + 'st';
+    }
+    if (j == 2 && k != 12) {
+      return num + 'nd';
+    }
+    if (j == 3 && k != 13) {
+      return num + 'rd';
+    }
+    return num + 'th';
+  }
+
+  const dayOfMonth = dayjs().date();
+  // This will give "25th"
+  const dayWithSuffix = ordinalSuffix(dayOfMonth);
+  //format the rest of the date without the day:
+  const restOfDate = dayjs().format('dddd, MMMM, YYYY');
+  const completeDate = `${dayWithSuffix} ${restOfDate}`;
+  currentDateElement.textContent = completeDate;
 });
