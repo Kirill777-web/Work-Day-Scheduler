@@ -26,9 +26,18 @@ To use the Work Day Scheduler:
 
 N/A
 
+## ⚠️ Warning: Extension Conflict
+
+- If you're using the Pro Writing Aid extension (particularly in Chrome), you might experience display issues or unexpected behavior with this application. This extension modifies webpage content, which can sometimes conflict with the intended functionality of web apps.
+
+Recommended Actions:
+
+- If you experience unexpected behavior, try disabling the Pro Writing Aid extension and then reload the page.
+  Alternatively, you can use our application in incognito mode (or a mode where extensions are not loaded) to ensure a smooth experience.
+
 ## Links
 
-- This is the link of my application [GitHub pages]()
+- This is the link of my application [GitHub pages](https://kirill777-web.github.io/Work-Day-Scheduler/)
 - This is the link of my [GitHub repository](https://github.com/Kirill777-web/Work-Day-Scheduler)
 
 - The following screenshots show the application final output:
